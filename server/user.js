@@ -17,15 +17,8 @@ router.post('/login', function(req, res) {
   })
 })
 
-router.get('/register', function(req, res) {
-  user.create({zh: 1006639040, pass: utils.md5('1006639040')}, function(err, docs) {
-    if (err) {
-      return res.json({code: 1,msg: '登陆出错'})
-    }
-    if (docs) {
-      return res.json({code: 0,msg: '注册成功'})
-    }
-  })
+router.get('/hello', function(req, res) {
+  res.json({code: 0,msg: '注册成功'})
 })
 
 module.exports = router
