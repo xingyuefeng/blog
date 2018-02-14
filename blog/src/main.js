@@ -31,8 +31,11 @@ Vue.directive('highlight', function (el) {
     hljs.highlightBlock(block)
   })
 })
+const debug = process.env.NODE_ENV !== 'production'
 
-axios.defaults.baseURL = '/api'
+if (debug) {
+  axios.defaults.baseURL = '/api'
+}
 
 new Vue({
   el: '#app',
