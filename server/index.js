@@ -5,6 +5,7 @@ const cookieParser = require('cookie-parser')
 const app = express()
 const user = require('./user')
 const article = require('./article')
+const path = require('path')
 
 app.use(cors({
   origin: ['http://localhost:8080'],
@@ -24,6 +25,10 @@ app.use(bodyParser.json())
 app.use('/user', user)
 
 app.use('/article', article)
+
+app.use(express.static(path.join(__dirname,
+
+  'dist')))
 
 app.listen(3000, function () {
   console.log('listening on port 3000!')
