@@ -1,0 +1,2 @@
+webpackJsonp([6],{Nymi:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i={components:{list:n("pjeT").a}},r={render:function(){var e=this.$createElement,t=this._self._c||e;return t("div",[t("list",{attrs:{type:"2"}})],1)},staticRenderFns:[]};var s=n("VU/8")(i,r,!1,function(e){n("XHi7")},null,null);t.default=s.exports},XHi7:function(e,t){}});
+//# sourceMappingURL=6.eeaf7f4a4ef8d6cb5282.js.map

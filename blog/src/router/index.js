@@ -1,15 +1,16 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import afterEnd from '../views/after-end/afterEnd'
-import fontEnd from '../views/font-end/fontEnd'
-import smile from '../views/smile/smile'
-import admin from '../views/admin/admin'
-import login from '../views/login/login'
-import home from '../views/home/home'
-import editor from '../views/editor/editor'
-import detail from '../views/article-detail/detail'
-import management from '../views/management/management'
-import update from '../views/update/update'
+
+const afterEnd = () => import('../views/after-end/afterEnd')
+const fontEnd = () => import('../views/font-end/fontEnd')
+const smile = () => import('../views/smile/smile')
+const admin = () => import('../views/admin/admin')
+const login = () => import('../views/login/login')
+const home  = () => import('../views/home/home')
+const editor = () => import('../views/editor/editor')
+const detail = () => import('../views/article-detail/detail')
+const management = () => import('../views/management/management')
+const update = () => import('../views/update/update')
 
 Vue.use(Router)
 
