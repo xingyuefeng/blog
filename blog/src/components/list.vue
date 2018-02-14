@@ -31,14 +31,12 @@ export default {
         .then(res => {
           if (res.data.code === 0) {
             this.list = res.data.list.reverse()
-            console.log(this.list)
           }
         })
       : this.axios.post('/article/all')
         .then(res => {
           if (res.data.code === 0) {
             this.list = res.data.list.reverse()
-            console.log(this.list)
           }
         })
   },

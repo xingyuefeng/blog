@@ -34,7 +34,6 @@ export default {
   },
   methods: {
     handleTabChange (val) {
-      console.log(val)
       this.activeTab = val
     },
     jump (val) {

@@ -35,7 +35,6 @@ router.post('/detail', function(req, res) {
       return res.json({code: 1, msg: 'error'})
     }
     if(docs) {
-      console.log(docs)
       return res.json({code: 0, data: docs})
     }
   })
