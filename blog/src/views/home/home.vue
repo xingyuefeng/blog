@@ -16,9 +16,9 @@
       <div class="breadcrumb">
       </div>
       <div class="body">
-        <keep-alive>
+      <!--  <keep-alive>
           <router-view></router-view>
-        </keep-alive>
+        </keep-alive> -->
       </div>
     </div>
     <div class="footer">
