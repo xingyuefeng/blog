@@ -17,7 +17,6 @@ import 'mavon-editor/dist/css/index.css'
 import hljs from 'highlight.js'
 import 'highlight.js/styles/googlecode.css'
 
-
 Vue.config.productionTip = false
 
 Vue.use(mavonEditor)
