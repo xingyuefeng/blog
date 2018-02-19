@@ -48,9 +48,9 @@ export default {
       this.axios.post('/article/upload',
         formdata
       ).then(res => {
-        var url = 'http://localhost:3000/' + res.data.data.replace('\\', '/')
+        // var url = 'http://localhost:3000/' + res.data.data.replace('\\', '/')
+        var url = res.data.data.replace('\\', '/')
         this.$refs.md.$img2Url(pos, url)
-        console.log(url)
       })
     }
   }
