@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="title">{{title}}</div>
+    <div class="article_title">{{title}}</div>
     <div class="detail" v-html="content" v-highlight></div>
   </div>
 </template>
@@ -29,10 +29,13 @@ export default {
 }
 </script>
 
-<style scoped>
-  .title {
+<style>
+  .article_title {
     text-align: center;
     font-size: 18px;
     line-height: 30px;
+  }
+  pre, code {
+    background: rgba(0, 0, 0, .04) !important;
   }
 </style>
