@@ -20,21 +20,26 @@ const router = new Router({
       path: '/',
       component: home,
       redirect: '/fontend',
+      meta: { keepAlive: true },
       children: [
         {
           path: '/afterend',
+          meta: { keepAlive: true },
           component: afterEnd
         },
         {
           path: '/fontend',
+          meta: { keepAlive: true },
           component: fontEnd
         },
         {
           path: '/smile',
+          meta: { keepAlive: true },
           component: smile
         },
         {
           path: '/detail/:id',
+          meta: { keepAlive: false },
           component: detail
         }
       ]

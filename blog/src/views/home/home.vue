@@ -16,9 +16,10 @@
       <div class="breadcrumb">
       </div>
       <div class="body">
-       <keep-alive>
-          <router-view></router-view>
+        <keep-alive >
+          <router-view v-if="$route.meta.keepAlive"></router-view>
         </keep-alive>
+        <router-view v-if="!$route.meta.keepAlive"></router-view>
       </div>
     </div>
     <div class="footer">
